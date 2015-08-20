@@ -1,0 +1,50 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "fetch": "^0.3.6",
+    "lodash": "^3.10.1",
+    "react": "^0.13.3",
+    "react-redux": "^0.9.0",
+    "react-router": "^1.0.0-beta3",
+    "redux": "^1.0.1",
+    "redux-thunk": "^0.1.0",
+    "request": "^2.61.0",
+    "request-promise": "^0.4.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^5.2.0",
+    "autoprefixer-loader": "^2.0.0",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.15.6",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "html-webpack-plugin": "^1.6.1",
+    "json-loader": "^0.5.2",
+    "node-sass": "^3.2.0",
+    "normalize.css": "^3.0.3",
+    "normalize.scss": "^0.1.0",
+    "redux-devtools": "^1.0.2",
+    "sass-loader": "^2.0.0",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --colors --inline --port=8088 --display-error-details --content-base dist/",
+    "build": "webpack --inline --display-error-details --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattmontgomery/personal-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattmontgomery/personal-site/issues"
+  },
+  "homepage": "https://github.com/mattmontgomery/personal-site#readme"
+}

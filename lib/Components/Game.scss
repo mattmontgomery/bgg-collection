@@ -1,0 +1,73 @@
+.bgg-collection {
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+    &__game-list {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__game {
+        flex: 0 0 25%;
+        margin-bottom: 1rem;
+        @media all and (max-width: 1000px) {
+            flex: 0 0 33%;
+        }
+        @media all and (max-width: 700px) {
+            flex: 0 0 50%;
+        }
+    }
+}
+
+.bgg-game {
+    display: flex;
+    &__image {
+        width: 125px;
+        flex: none;
+        padding: 1rem;
+        align-self: top;
+        text-align: center;
+        background: #fafafa;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        font-weight: 800;
+        h4 {
+            font-size: 18px;
+            margin: 0;
+        }
+        a {
+            color: #900;
+            text-decoration: none;
+        }
+    }
+    &__details {
+        flex: 1;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        display: flex;
+        flex-flow: column;
+        background: #f0f0f0;
+        color: #303030;
+        label {
+            display: block;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+    }
+    &__secondary-details {
+        display: flex;
+        padding-bottom: 1rem;
+        flex-flow: row;
+        flex: 1 0 33%;
+        align-items: flex-end;
+    }
+    &__secondary-detail {
+        padding-right: 1rem;
+        flex: 1;
+        text-align: center;
+    }
+}

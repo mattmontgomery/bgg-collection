@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800);
+body {
+    display: flex;
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
+}
+#root {
+    display: flex;
+    flex: 1;
+}
+.bgg-collection {
+    padding: 1rem;
+    &__controls {
+        background: #aaa;
+        padding: 1rem;
+        &-name {
+            margin-right: 1rem;
+            input {
+                font-weight: bold;
+            }
+        }
+        &-submit, &-name {
+            display: inline-block;
+        }
+    }
+    &__game-list {
+        padding: 1rem 0;
+    }
+}
