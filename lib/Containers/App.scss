@@ -1,21 +1,61 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800);
 
+@import '../_variables';
 body {
     display: flex;
+    flex: 1;
+    min-height: 100vh;
+    flex-direction: column;
     font-family: 'Open Sans', 'Arial', 'sans-serif';
 }
 #root {
     display: flex;
     flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
 }
 .bgg-collection {
-    padding: 1rem;
+    flex-direction: row;
+    flex: 1;
+    display: flex;
+    @media all and (max-width: $mobileScreen) {
+        flex-direction: column;
+    }
     &__controls {
-        background: #aaa;
+        background: #f0f0f0;
+        border: 1px solid #e9e9e9;
+        font-weight: light;
         padding: 1rem;
+        margin-right: .5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        @media all and (max-width: $mobileScreen) {
+            margin-bottom: 1rem;
+            margin-right: 0;
+        }
         form {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            flex: 1;
+        }
+        &-toggle {
+            flex: none;
+            cursor: pointer;
+        }
+        &--hidden {
+            form {
+                display: none;
+            }
+        }
+        button {
+            border: 1px solid #999;
+            background: #dadada;
+            font-weight: 100;
+            margin: 1rem 0;
         }
         &-name {
             margin-right: 1rem;
@@ -31,6 +71,7 @@ body {
             padding-left: 1rem;
         }
         &-filter {
+            margin: 0 0 1rem 0;
             &--small {
                 input {
                     width: 2rem;
@@ -39,7 +80,27 @@ body {
         }
     }
     &__game-list {
-        padding: 1rem 0;
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+
+    }
+    &__game {
+        flex: 1 0 24%;
+        margin: 0 .5rem .5rem 0;
+        @media all and (max-width: $mediumScreen) {
+            flex: 1 0 46%;
+        }
+        @media all and (max-width: $smallScreen) {
+            flex: 1 0 100%;
+        }
+    }
+    label {
+        display: block;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 11px;
     }
 }
 .example-appear {
