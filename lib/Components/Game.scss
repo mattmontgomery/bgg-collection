@@ -4,7 +4,7 @@
     background: #f0f0f0;
     box-sizing: border-box;
     &__image {
-        flex: 2;
+        flex: 3;
         padding: .5rem;
         align-self: top;
         text-align: center;
@@ -20,8 +20,9 @@
     }
     &__title {
         font-weight: 800;
+        flex: 1;
         h4 {
-            font-size: 18px;
+            font-size: 12pt;
             margin: 0;
         }
         a {
@@ -33,20 +34,30 @@
         flex: 5;
         padding: .5rem;
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         color: #303030;
     }
     &__secondary-details {
+        padding-top: 1rem;
         display: flex;
-        padding-bottom: 1rem;
-        flex-flow: row;
-        flex: 1 0 33%;
-        align-items: flex-end;
+        flex-direction: column;
     }
     &__secondary-detail {
-        padding-right: 1rem;
         flex: 1;
-        text-align: center;
+        text-align: left;
+        display: flex;
+        font-size: 12px;
+        align-items: baseline;
+        padding-bottom: .5rem;
+        label {
+            font-size: inherit;
+            flex: 1;
+            text-align: right;
+            padding-right: .5rem;
+        }
+        div {
+            flex: 2;
+        }
     }
     &--expansion {
         background: $expansionColor;
