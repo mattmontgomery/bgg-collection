@@ -25,6 +25,11 @@ body {
     @media all and (max-width: $mobileScreen) {
         flex-direction: column;
     }
+    &__filters {
+        &--hidden {
+            display: none;
+        }
+    }
     &__controls {
         background: #f0f0f0;
         border: 1px solid #e9e9e9;

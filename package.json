@@ -4,17 +4,18 @@
   "description": "",
   "main": "lib/index.js",
   "dependencies": {
+    "axios": "^0.7.0",
     "classnames": "^2.1.3",
+    "history": "^1.13.0",
     "lodash": "^3.10.1",
-    "react": "^0.13.3",
-    "react-redux": "^0.9.0",
-    "react-router": "^1.0.0-beta3",
-    "redux": "^1.0.1",
-    "redux-thunk": "^0.1.0",
-    "request": "^2.61.0",
-    "request-promise": "^0.4.3",
-    "rest": "^1.3.1",
-    "slug": "^0.9.1"
+    "react": "^0.14.0",
+    "react-dom": "^0.14.3",
+    "react-redux": "4.0.0",
+    "react-router": "^1.0.2",
+    "redux": "3.0.4",
+    "redux-thunk": "1.0.0",
+    "request": "^2.67.0",
+    "request-promise": "1.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^5.2.0",
@@ -27,11 +28,11 @@
     "node-sass": "^3.2.0",
     "normalize.css": "^3.0.3",
     "normalize.scss": "^0.1.0",
-    "redux-devtools": "^1.0.2",
+    "redux-devtools": "2.1.5",
     "sass-loader": "^2.0.0",
     "style-loader": "^0.12.3",
-    "webpack": "^1.11.0",
-    "webpack-dev-server": "^1.10.1"
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.14.0"
   },
   "scripts": {
     "build": "webpack --inline --display-error-details --debug",
