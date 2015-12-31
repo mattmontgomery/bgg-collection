@@ -15,7 +15,8 @@
     "redux": "3.0.4",
     "redux-thunk": "1.0.0",
     "request": "^2.67.0",
-    "request-promise": "1.0.2"
+    "request-promise": "1.0.2",
+    "continuation-local-storage": "~3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^5.2.0",
